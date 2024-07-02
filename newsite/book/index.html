@@ -314,7 +314,7 @@ It gives you all the best practice you need to make your customer experiences su
 
 <section class="row_container">
 <div class="tile_span4">
-<a href="../downloads/frontmattertoc.pdf" target="_blank"><img src="../images/lookinside.png" alt="Screenshot of the cover of the book" /></a> 
+<a href="../downloads/frontmattertoc.pdf"><img src="../images/lookinside.png" alt="Screenshot of the cover of the book" /></a> 
 </div>
 </section>
 
@@ -337,7 +337,7 @@ It gives you all the best practice you need to make your customer experiences su
 
 <section class="row_container">
 <div class="tile_span8" style="align-items: center">
-<img src="../images/plannerjourneycropped.png" alt="Diagrammatic representation of the Table of Contents of the Action Planner" /> &nbsp;<a href="../downloads/plannertocpreview.pdf" target="_blank"><img src="../images/lookinsideplanner.png" alt="Screenshot of the cover of the Action Planner" /></a>
+<img src="../images/plannerjourneycropped.png" alt="Diagrammatic representation of the Table of Contents of the Action Planner" /> &nbsp;<a href="../downloads/plannertocpreview.pdf"><img src="../images/lookinsideplanner.png" alt="Screenshot of the cover of the Action Planner" /></a>
 </div>
 </section>
 
@@ -362,7 +362,7 @@ It gives you all the best practice you need to make your customer experiences su
 
 <section class="row_container">
 <div class="tile_span8">
-<img src="../images/monitorjourneycropped.png" alt="diagrammatic representation of the Table of Contents of the Success Monitor" /> &nbsp;<a href="../downloads/monitortocpreview.pdf" target="_blank"><img src="../images/lookinsidemonitor.png" alt="Screenshot of the cover of the Success Monitor" /></a>
+<img src="../images/monitorjourneycropped.png" alt="diagrammatic representation of the Table of Contents of the Success Monitor" /> &nbsp;<a href="../downloads/monitortocpreview.pdf"><img src="../images/lookinsidemonitor.png" alt="Screenshot of the cover of the Success Monitor" /></a>
 </div>
 </section>
 
@@ -482,9 +482,18 @@ I hope you find the book useful and would love your feedback! Email me: catherin
 
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
+  function get_cookie(name){
+      return document.cookie.split(';').some(c => {
+          return c.trim().startsWith(name + '=');
+      });
+  }
+  alert(get_cookie("sc_is_visitor_unique"));
+  alert(get_cookie("is_visitor_unique"));
+  alert(get_cookie("is_unique"));
 var sc_project=10807901;
 var sc_invisible=1;
 var sc_security="7dfdbc2d";
+var sc_client_storage="disabled";
 var scJsHost = (("https:" == document.location.protocol) ?
 "https://secure." : "http://www.");
 document.write("<sc"+"ript type='text/javascript' src='" +

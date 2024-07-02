@@ -468,9 +468,18 @@ Kathryn Welch, Operations Director, Macrobert Arts Centre</p></blockquote>
 
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
+  function get_cookie(name){
+      return document.cookie.split(';').some(c => {
+          return c.trim().startsWith(name + '=');
+      });
+  }
+  alert(get_cookie("sc_is_visitor_unique"));
+  alert(get_cookie("is_visitor_unique"));
+  alert(get_cookie("is_unique"));
 var sc_project=10807901;
 var sc_invisible=1;
 var sc_security="7dfdbc2d";
+var sc_client_storage="disabled";
 var scJsHost = (("https:" == document.location.protocol) ?
 "https://secure." : "http://www.");
 document.write("<sc"+"ript type='text/javascript' src='" +

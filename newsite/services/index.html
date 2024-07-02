@@ -287,7 +287,7 @@
 <div class="tile_span6">
 <p>The daily business and busy-ness can mean that you <span class="emphasis">lose sight of the big picture.</span></p>
 <p>
-Do you make time to strategize? To make sure you are still doing what is most impactful for your clients?</p>
+Do you make time to strategise? To make sure you are still doing what is most impactful for your clients?</p>
 <p>
 I help you to pause and take a bird’s eye view. To look outwards to identify any <span class="emphasis">threats or overlooked opportunities</span>. To discover any blind spots. 
 </p>
@@ -538,9 +538,18 @@ I help you to decide on priority actions and how to measure progress. </p>
 
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
+  function get_cookie(name){
+      return document.cookie.split(';').some(c => {
+          return c.trim().startsWith(name + '=');
+      });
+  }
+  alert(get_cookie("sc_is_visitor_unique"));
+  alert(get_cookie("is_visitor_unique"));
+  alert(get_cookie("is_unique"));
 var sc_project=10807901;
 var sc_invisible=1;
 var sc_security="7dfdbc2d";
+var sc_client_storage="disabled";
 var scJsHost = (("https:" == document.location.protocol) ?
 "https://secure." : "http://www.");
 document.write("<sc"+"ript type='text/javascript' src='" +
