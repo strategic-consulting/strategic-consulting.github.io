@@ -26,8 +26,6 @@
 	<meta property="og:image" content="https://www.strategic-consulting.scot/images/diagrammingblog_1600x600.jpg" />
 
 
-    
-
     <link rel="canonical" href="https://www.strategic-consulting.scot/articles/diagrammingblog/">
 
     <link href="https://www.strategic-consulting.scot/atom.xml" type="application/atom+xml" rel="alternate" title="Catherine Brys - Strategic Consulting Atom Feed">
@@ -35,10 +33,6 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="cleartype" content="on">
-
-  <!-- <meta name="description" content="Strategic Consulting by Catherine Brys"/>-->
-
 
     <style>
     .sliding-menu-content {
@@ -56,7 +50,7 @@
     }
     </style>
 
-    <link rel="stylesheet" href="https://www.strategic-consulting.scot/css/main.css">
+    <link id="pagestyle" rel="stylesheet" href="https://www.strategic-consulting.scot/css/main.css">
 
     <!-- HTML5 Shiv and Media Query Support for IE -->
     <!--[if lt IE 9]>
@@ -64,34 +58,107 @@
       <script src="https://www.strategic-consulting.scot/js/vendor/respond.min.js"></script>
     <![endif]-->
 
+    <!-- cookiless analytics-->
+    <script
+    src="https://beamanalytics.b-cdn.net/beam.min.js"
+    data-token="603ad53e-f701-48f7-93d4-e23522034fc7"
+    async>
+  </script>
+  
   </head>
 
   <body>
-
+    <script type="text/javascript">
+      // Select CSS 
+      const highcontrast = "https://www.strategic-consulting.scot/css/mainhighcontrast.css";
+      const defaultcss   = "https://www.strategic-consulting.scot/css/main.css";
+    
+      function swapStyleSheet(sheet) {
+        document.getElementById("pagestyle").setAttribute("href", sheet);  
+      }
+      function selectHighContrast() {
+        localStorage.setItem("contrast-theme", highcontrast );
+        swapStyleSheet(highcontrast);
+      }
+    
+      function selectDefault() {
+        localStorage.setItem("contrast-theme", defaultcss );
+        swapStyleSheet(defaultcss);
+      }
+    
+      function toggleHighContrast() { 
+        const storedContrast = localStorage.getItem("contrast-theme");
+        if (storedContrast == defaultcss) {
+          selectHighContrast();
+          // alert(highcontrast);
+        } else {
+          selectDefault();
+          // alert(defaultcss);
+        }	
+      }
+      const storedContrast = localStorage.getItem("contrast-theme");
+      if (storedContrast !== null ) {
+        // alert(storedContrast);
+        swapStyleSheet(storedContrast);
+      }
+      </script>
     <header id="masthead">
   <div class="inner-wrap">
-<a href="https://www.strategic-consulting.scot" class="site-title">Brys&nbsp;Strategic&nbsp;Consulting</a>
+    <!-- <a href="https://www.strategic-consulting.scot" class="site-title">Brys&nbsp;Strategic&nbsp;Consulting</a> -->
     <nav role="navigation" class="menu top-menu">
         <ul class="menu-item">
-	<li class="home"><a href="/">Catherine Brys - Strategic Consulting</a></li>
+	<!-- <li class="home"><a href="/">XXXCatherine Brys - Strategic ConsultingYYY</a></li> -->
+    <li ><a href="https://www.strategic-consulting.scot"><span class="site-title-li">Brys&nbsp;Strategic&nbsp;Consulting</span></a></li>
 	
     
+        
+    <li>&nbsp;&nbsp;</li>
+    
+  
+    
+        
+    <li>&nbsp;&nbsp;</li>
+    
+  
+    
+        
+    <li>&nbsp;&nbsp;</li>
+    
+  
+    
+        
     <li><a href="https://www.strategic-consulting.scot/services/" >Services</a></li>
+    
   
     
+        
+    <li><a href="https://www.strategic-consulting.scot/cases/" >Case studies</a></li>
+    
+  
+    
+        
     <li><a href="https://www.strategic-consulting.scot/about/" >About</a></li>
+    
   
     
+        
     <li><a href="https://www.strategic-consulting.scot/book/" >Book</a></li>
+    
   
     
+        
     <li><a href="https://www.strategic-consulting.scot/articles/" >Articles</a></li>
+    
   
     
+        
     <li><a href="https://www.strategic-consulting.scot/speaker/" >Speaker</a></li>
+    
   
     
+        
     <li><a href="https://www.strategic-consulting.scot/contact/" >Contact</a></li>
+    
   
 
 </ul>
@@ -103,227 +170,300 @@
 
     <nav role="navigation" class="js-menu sliding-menu-content">
 	<ul class="menu-item">
+		<li><a href="https://www.strategic-consulting.scot" class="orangebannerlink">Home</a></li>
 		<li>
       
 			
-			<a href="https://www.strategic-consulting.scot/services/" class="title">Services</a>
+			<a href="https://www.strategic-consulting.scot" class="orangebannerlink"></a>
 			
 		</li><li>
       
 			
-			<a href="https://www.strategic-consulting.scot/about/" class="title">About</a>
+			<a href="https://www.strategic-consulting.scot" class="orangebannerlink"></a>
 			
 		</li><li>
       
 			
-			<a href="https://www.strategic-consulting.scot/book/" class="title">Book</a>
+			<a href="https://www.strategic-consulting.scot" class="orangebannerlink"></a>
 			
 		</li><li>
       
 			
-			<a href="https://www.strategic-consulting.scot/articles/" class="title">Articles</a>
+			<a href="https://www.strategic-consulting.scot/services/" class="orangebannerlink">Services</a>
 			
 		</li><li>
       
 			
-			<a href="https://www.strategic-consulting.scot/speaker/" class="title">Speaker</a>
+			<a href="https://www.strategic-consulting.scot/cases/" class="orangebannerlink">Case studies</a>
 			
 		</li><li>
       
 			
-			<a href="https://www.strategic-consulting.scot/contact/" class="title">Contact</a>
+			<a href="https://www.strategic-consulting.scot/about/" class="orangebannerlink">About</a>
+			
+		</li><li>
+      
+			
+			<a href="https://www.strategic-consulting.scot/book/" class="orangebannerlink">Book</a>
+			
+		</li><li>
+      
+			
+			<a href="https://www.strategic-consulting.scot/articles/" class="orangebannerlink">Articles</a>
+			
+		</li><li>
+      
+			
+			<a href="https://www.strategic-consulting.scot/speaker/" class="orangebannerlink">Speaker</a>
+			
+		</li><li>
+      
+			
+			<a href="https://www.strategic-consulting.scot/contact/" class="orangebannerlink">Contact</a>
 			
 		</li>
 	</ul>
 </nav>
+
+<img alt="Increase contrast" class="contrast-icon" aria-label="Toggle Contrast" src="https://www.strategic-consulting.scot/images/iconcontrast.svg" onclick="toggleHighContrast();" onkeypress="toggleHighContrast();">
 <button type="button" class="js-menu-trigger sliding-menu-button menulines-button x2" role="button" aria-label="Toggle Navigation">
 	<span class="menulines"></span>
 </button>
 
 <div class="js-menu-screen menu-screen"></div>
 
+<!-- /.page-feature moved to index pages (home and content pages)-->
+<!--     
+<div class="page-lead" style="background-image:url(https://www.strategic-consulting.scot/images/diagrammingblog_1600x600.jpg)">
 
-    
-		<div>
-			<div class="page-image2">
-				<img src="https://www.strategic-consulting.scot/images/diagrammingblog_1600x600.jpg" alt="The power of diagramming: clarity and better decisions">
-        <div class="photocreditblog"><span>Banner photo by Malcolm Lightbody on unsplash</span>
-        
-			</div><!-- /.page-image -->
+                  <div class="wrap page-lead-content">
+        <h1>Reach your potential &mdash; and enjoy the journey</h1>
+        <p class="strapline">STRATEGY | CLIENT EXPERIENCE | STAKEHOLDER ENGAGEMENT | CONFLICT RESOLUTION 
+        </p>
+      </div>
 
-		</div><!-- /.page-feature -->
-		
+		</div> --><!-- /.page-feature -->
+<!--      -->
+
 
     <div id="page-wrapper">
-      <nav class="breadcrumbs">
-  <a href="https://www.strategic-consulting.scot">Home</a> <span class="divider">/</span> <a href="https://www.strategic-consulting.scot/articles/">Articles</a> <span class="divider">/</span>
-</nav><!-- /.breadcrumbs -->
 
       <div id="main" role="main">
-
         <div class="wrap">
 
-          <div class="page-title">
-<!--            <h1>The power of diagramming: clarity and better decisions</h1> -->
-            <br>
-<!--            <h2>A simple technique for quiet thinking and for working with stakeholders.</h2> -->
-          </div>
-          <div class="archive-wrap" style="padding-right:20%">
-
+          <div class="archive-wrap">
             <div class="page-content">
-
               <!--  for each article -->
-<div class="page-meta">
+<!-- <div class="page-meta">
 	<p><time datetime="2022-11-05T00:00:00Z">05 November 2022</time></p>
-</div>
+</div> -->
 <!-- /.page-meta -->
 <!-- end for each article -->
 
-<h1 class="h1page">The power of diagramming: clarity and better decisions</h1>
-<p>Diagramming is a simple technique I find very useful: summarising, analysing and conveying information and ideas in simple diagrams. These diagrams are <span class="emphasiscolour3">not mindmaps</span> but <span class="emphasiscolour3">collections of shapes and words</span>. Diagramming is an approach that can help you see clarity and can help the stakeholders you’re working with see clarity – and ultimately make better decisions.</p>
+<!-- /.page-feature moved from blog.html-->
+<div>
+<div class="page-image2"><img src="https://www.strategic-consulting.scot/images/diagrammingblog_1600x600.jpg" alt="The power of diagramming: clarity and better decisions" />
+<div class="photocreditblog"><span>Banner photo by Malcolm Lightbody on unsplash</span></div>
+<!-- /.page-image -->
+</div>
+<!-- /.page-feature -->
+</div>
 
-<p>I usually start with some freestyle scribbles on paper but tend to move quickly to a simple drawing software tool (I use PowerPoint). I start from a blank canvas.</p>
+<section class="row_container">
+<!-- breadcrumbs -->
+<nav>
+  <a href="https://www.strategic-consulting.scot" class="textlink">Home</a> / <a href="https://www.strategic-consulting.scot/articles/" class="textlink">Articles</a> /
+</nav><!-- /.breadcrumbs -->
 
-<h2 class="h2blog1">Uses of diagramming</h2>
+</section>
 
+<!--spacer -->
+<section class="row_container">
+<p></p>
+</section>
+
+<!--art title -->
+<section class="row_container">
+<h1 class="h1art">The power of diagramming: clarity and better decisions</h1>
+</section>
+
+<!--art intro -->
+<section class="row_container">
+<div class="tile_span8">
+<p>Diagramming is a simple technique I find very useful: summarising, analysing and conveying information and ideas in simple diagrams. These diagrams are <span class="emphasiscolour">not mindmaps</span> but <span class="emphasiscolour">collections of shapes and words</span>. Diagramming is an approach that can help you see clarity and can help the stakeholders you're working with see clarity &ndash; and ultimately make better decisions.
+</p>
+<p>
+I usually start with some freestyle scribbles on paper but tend to move quickly to a simple drawing software tool (I use PowerPoint). I start from a blank canvas. </p>
+</div>
+</section>
+
+<!--art heading -->
+<section class="row_container">
+<h2 class="h2art">Uses of diagramming</h2>
+</section>
+
+<!--art para -->
+<section class="row_container">
+<div class="tile_span8">
 <p>You can use diagramming in two ways: when spending quiet thinking time analysing a problem and when you are engaging with stakeholders.</p>
+</div>
+</section>
 
-<h3 class="h3page5">One: When working on a knotty problem on your own</h3>
-<p>Diagramming can help tremendously to <span class="emphasiscolour3">get a handle on a complex problem or situation</span>: to structure it into its components, to draw out causes and influencing factors, to capture relationships between factors. This phase is crucial and it’s worth spending time making iterations of the diagram until you are sure you have analysed the problem or situation thoroughly and have a clear diagram (or set of diagrams).</p>
+<!--art lower heading -->
+<section class="row_container">
+<h3 class="h3art">One: When working on a knotty problem on your own</h3>
+</section>
 
-<p>Once you see the problem clearly, diagramming can help you to systematically <span class="emphasiscolour3">capture and structure your ideas </span>to overcome the challenge.</p>
+<!--art para -->
+<section class="row_container">
+<div class="tile_span8">
+<p>Diagramming can help tremendously to <span class="emphasiscolour">get a handle on a complex problem or situation</span>: to structure it into its components, to draw out causes and influencing factors, to capture relationships between factors. This phase is crucial and it’s worth spending time making iterations of the diagram until you are sure you have analysed the problem or situation thoroughly and have a clear diagram (or set of diagrams).
+</p>
+<p>
+Once you see the problem clearly, diagramming can help you to systematically <span class="emphasiscolour">capture and structure your ideas </span>to overcome the challenge.
+<br />
+<img src="../../images/workingalone400.png" alt="Diagrammatic representation of using diagramming to analyse a problem and structure ideas" />
+<br /><span class="copyright">© 2022 Catherine Brys - Brys Strategic Consulting</span>
+</p>
+</div>
+</section>
 
-<p><img src="../../images/workingalone400.png" />
-<br /><span class="copyright">© 2022 Catherine Brys - Brys Strategic Consulting</span></p>
-<h3 class="h3page5">Two: When working with stakeholders</h3>
+<!--art lower heading -->
+<section class="row_container">
+<h3 class="h3art">Two: When working with stakeholders</h3>
+</section>
 
+<!--art para -->
+<section class="row_container">
+<div class="tile_span8">
 <p>Diagramming is also particularly useful when you are engaging with stakeholders, be it one-to-one or in a group meeting. There are a couple of different ways you can go about it.</p>
 
-<ul class="parabullet">
-<li><span class="emphasiscolour3">Your own diagram as starting point or a blank canvas.</span>
+<ul>
+<li><span class="emphasiscolour">Your own diagram as starting point or a blank canvas.</span>
 If you have analysed the problem on your own first using diagramming, your diagrams can be an excellent starting point for discussions. Or you can start from a blank sheet and capture what emerges from the stakeholder conversations diagrammatically.</li>
-<li><span class="emphasiscolour3">Summary of individual conversations or evolving note.</span>
-When you have completed a series of individual stakeholder conversations you can <span class="emphasiscolour3">summarise the key points</span> into a single diagram. Or you can <span class="emphasiscolour3">build up a diagram</span> as you are having discussions, adding to and annotating it with input from each stakeholder &ndash; in this case the diagram is an <span class="emphasiscolour3">evolving collaborative note</span>. Or you can use a combination of both</li>
+<li><span class="emphasiscolour">Summary of individual conversations or evolving note.</span>
+When you have completed a series of individual stakeholder conversations you can <span class="emphasiscolour">summarise the key points</span> into a single diagram. Or you can <span class="emphasiscolour">build up a diagram</span> as you are having discussions, adding to and annotating it with input from each stakeholder &ndash; in this case the diagram is an <span class="emphasiscolour">evolving collaborative note</span>. Or you can use a combination of both</li>
 
-<li><span class="emphasiscolour3">As a tool in group meetings.</span>
-The diagrams from individual conversations can be the  <span class="emphasiscolour3">starting point for a group discussion</span>. It is a time-efficient way of sharing every stakeholder's contribution.
-<span class="emphasiscolour3">Live diagramming</span> during the group meeting &ndash; though a bit more tricky &ndash; can help to make sure everyone stays focused on the issues at hand.</li>
+<li><span class="emphasiscolour">As a tool in group meetings.</span>
+The diagrams from individual conversations can be the  <span class="emphasiscolour">starting point for a group discussion</span>. It is a time-efficient way of sharing every stakeholder's contribution.
+<span class="emphasiscolour">Live diagramming</span> during the group meeting &ndash; though a bit more tricky &ndash; can help to make sure everyone stays focused on the issues at hand.</li>
 </ul>
+<p><img src="../../images/workingwithstakeholders400.png" alt="Diagrammatic representation of using diagramming when working with stakeholders" />
+<br /><span class="copyright">© 2022 Catherine Brys - Brys Strategic Consulting</span></p>
+</div>
+</section>
 
-<p><img src="../../images/workingwithstakeholders400.png" />
-<br /><span class="copyright">© 2022 Catherine Brys - Brys Strategic Consulting</span>
-<br />
-<br /></p>
-<h2 class="h2blog1">Benefits of diagramming</h2>
+<!--art heading -->
+<section class="row_container">
+<h2 class="h2art">Benefits of diagramming</h2>
+</section>
+
+<!--art para -->
+<section class="row_container">
+<div class="tile_span8">
 <p>There are two main benefits of diagramming:</p>
-<ul class="parabullet">
-<li><span class="emphasiscolour3">Structure becomes clear.</span>
+<ul>
+<li><span class="emphasiscolour">Structure becomes clear.</span>
 It’s amazing  how diagramming can help you to analyse a problem and get insights into its complexities in a relatively short period of time. I actually find that as long as my diagram is quite messy, it’s usually an indication that I have not thought the problem through sufficiently. So I rethink and refine until clarity emerges.</li>
-<li><span class="emphasiscolour3">The diagram serves as a focal point during discussions.</span>
+<li><span class="emphasiscolour">The diagram serves as a focal point during discussions.</span>
 This type of diagram really helps to focus minds during group meetings or workshops: it’s a concise and visual reminder of the problem and people’s views/ideas. It is also a useful record to refer to during subsequent discussions so that the focus continues and momentum is kept up.</li>
 </ul>
+</div>
+</section>
 
-<p><br /> Do you use diagramming?</p>
-
-<p>Feel free to drop me a line to share your thoughts — catherine [at] strategic-consulting.scot
-<br />
-<br />
-Diagrams © 2022 Catherine Brys - Brys Strategic Consulting</p>
 
             </div><!-- /.page-content -->
+         
           </div><!-- /.archive-wrap -->
 
-
-          <div class="inner-wrap">
-
-            <img src="../../images/Brys100.jpg" class="headshotdeco"> <span class="authorname">Catherine Brys, PhD MBA</span>&nbsp; <span class="authorroles">COACH | FACILITATOR | CONSULTANT</span>
-
-            <!-- <br><p><span class="authorname">Catherine Brys, PhD MBA </span>&nbsp; <span class="authorroles">COACH | FACILITATOR | CONSULTANT</span>
-  </p>-->
-            <nav class="toc"></nav><!-- /.toc -->
-            <div id="content" class="page-content">
-
-        <br />
-              <footer class="page-footer">
-                
-                
-<!--<div class="author-image">
-	<img src="https://www.strategic-consulting.scot/images/Brys200.jpg" alt="Catherine Brys">
-
-</div>--><author-image>
-<div class="author-content">
-	<p class="author-name" >&nbsp;</p>
-	<p class="author-bio"></p>
-</div><!-- ./author-content -->
-
-                
-        <!-- <span itemprop="author">Catherine Brys</span> -->
-                <div class="page-meta">
-	<p>Updated <time datetime="2022-11-05T00:00:00Z">November 05, 2022</time></p>
-</div><!-- /.page-meta -->
-
-              </footer><!-- /.footer -->
-
-            </div><!-- /.content -->
-          </div><!-- /.inner-wrap -->
 
         </div><!-- /.wrap -->
 
       </div><!-- /#main -->
 
 
-      <footer role="contentinfo" id="site-footer">
-
-
+      <footer role="contentinfo" id="site-footer" > 
+  <div>catherine [at] strategic-consulting.scot &nbsp; &nbsp;|&nbsp; &nbsp; Glasgow, Scotland, UK &ndash; working remotely across the UK and Europe</div> <br>
 	<nav role="navigation" class="menu bottom-menu">
 		<ul class="menu-item">
 		
       
-			<li><a href="https://www.strategic-consulting.scot/" >HOME</a></li>
+			<li><a href="https://www.strategic-consulting.scot/" class="allcaps" >Home</a>
+			
+		
+        </li>
 		
       
-			<li><a href="https://www.strategic-consulting.scot/services/" >SERVICES</a></li>
+			<li><a href="https://www.strategic-consulting.scot/services/" class="allcaps" >Services</a>
+			
+		
+		    <ul>
+        
+              <li><a href="https://www.strategic-consulting.scot/services/#strategy">Strategy</a></li>
+        
+              <li><a href="https://www.strategic-consulting.scot/services/#cx">Client&nbsp;experience</a></li>
+        
+              <li><a href="https://www.strategic-consulting.scot/services/#stakeholder">Stakeholder&nbsp;engagement</a></li>
+        
+              <li><a href="https://www.strategic-consulting.scot/services/#conflict">Conflict&nbsp;resolution</a></li>
+        
+            </ul>
+        
+        </li>
 		
       
-			<li><a href="https://www.strategic-consulting.scot/about/" >ABOUT</a></li>
+			<li><a href="https://www.strategic-consulting.scot/cases/" class="allcaps" >Case&nbsp;studies</a>
+			
+		
+        </li>
 		
       
-			<li><a href="https://www.strategic-consulting.scot/book/" >BOOK</a></li>
+			<li><a href="https://www.strategic-consulting.scot/about/" class="allcaps" >About</a>
+			
+		
+		    <ul>
+        
+              <li><a href="https://www.strategic-consulting.scot/about/#bio">Bio</a></li>
+        
+              <li><a href="https://www.strategic-consulting.scot/about/#story">Story</a></li>
+        
+              <li><a href="https://www.strategic-consulting.scot/about/#values">Values</a></li>
+        
+              <li><a href="https://www.strategic-consulting.scot/about/#associate">Associate</a></li>
+        
+            </ul>
+        
+        </li>
 		
       
-			<li><a href="https://www.strategic-consulting.scot/articles/" >ARTICLES</a></li>
+			<li><a href="https://www.strategic-consulting.scot/book/" class="allcaps" >Book</a>
+			
+		
+        </li>
 		
       
-			<li><a href="https://www.strategic-consulting.scot/speaker/" >SPEAKER</a></li>
+			<li><a href="https://www.strategic-consulting.scot/articles/" class="allcaps" >Articles</a>
+			
+		
+        </li>
 		
       
-			<li><a href="https://www.strategic-consulting.scot/contact/" >CONTACT</a></li>
+			<li><a href="https://www.strategic-consulting.scot/speaker/" class="allcaps" >Speaker</a>
+			
+		
+        </li>
 		
       
-			<li><a href="https://www.strategic-consulting.scot/lic/" >Terms</a></li>
+			<li><a href="https://www.strategic-consulting.scot/contact/" class="allcaps" >Contact</a>
+			
+		
+        </li>
 		
 		</ul>
-	</nav><!-- /.bottom-menu -->
-	<p class="copyright">&#169; 2023 Catherine Brys - Brys Strategic Consulting | People stock photos by Andrea Piacquadio on pexels</p>
+	</nav>
 
-<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=10807901;
-var sc_invisible=1;
-var sc_security="7dfdbc2d";
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="web stats"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="http://c.statcounter.com/10807901/0/7dfdbc2d/1/"
-alt="web stats"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
-
+  <!-- /.bottom-menu -->
+	<p class="copyright"><span style="font-family:sans">©</span> 2016 &ndash; 2024 Catherine Brys - Brys Strategic Consulting &nbsp;|&nbsp; Web site design by Catherine Brys &nbsp;|&nbsp; This web site does not use cookies  &nbsp;|&nbsp;<a href="https://www.strategic-consulting.scot/privacy" class="footerlink">Privacy notice</a></p>
 </footer>
 
     </div>
