@@ -1,0 +1,4 @@
+cd  /Users/catherine/Git/Strategic-Consulting/strategic-consulting.github.io
+git commit -a -m "nm"
+git push 
+

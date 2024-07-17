@@ -1,0 +1,2 @@
+cd /Users/catherine/Git/Strategic-Consulting/strategic-consulting.github.io
+git add $1/index.*

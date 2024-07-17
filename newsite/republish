@@ -1,0 +1,8 @@
+perl set_mod_date.pl
+perl generate_sitemap.pl > sitemap.xml
+cp _config.yml.publish _config.yml
+bundle exec jekyll build -d /Users/catherine/Git/Strategic-Consulting/strategic-consulting.github.io
+cd  /Users/catherine/Git/Strategic-Consulting/strategic-consulting.github.io
+git commit -a -m "nm"
+git push 
+

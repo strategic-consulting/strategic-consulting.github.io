@@ -1,0 +1,3 @@
+# expects images/pic_name
+cd /Users/catherine/Git/Strategic-Consulting/strategic-consulting.github.io
+git add $1
