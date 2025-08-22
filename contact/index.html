@@ -65,6 +65,31 @@
     async>
   </script>
   
+  <script type="text/javascript">
+    var a1="con"; var a2="cath";var b2="in";var b1="strat"; var c1="sult"; var d1="scot"
+function createEmail() {
+    
+    var choices = document.getElementById('choice-business').checked ? "business" : "";
+    choices = document.getElementById('choice-third-sector').checked ? choices+(choices!="" ? " and " : "")+"third sector" : choices;
+    if (choices=="") {
+        choices="business and third sector";
+    }
+    var subject = "Subscribe to content letter "+choices;
+    var message = "Hi Catherine,\n\nPlease subscribe me to your content letter with insights for "+choices+".";
+    var email = a1+"tent@"+b1+"egic-"+a1+c1+b2+"g."+d1;
+    var mailtoUrl = 'mailto:' + email + "?"+encodeURI("subject=" + subject + "&body=" + message);
+    window.location.href = mailtoUrl;
+}
+
+function createContactEmail() {
+    var subject = "Enquiry";
+    var message = "";
+    var email = a2+"er"+b2+"e@"+b1+"egic-"+a1+c1+b2+"g."+d1;
+    var mailtoUrl = 'mailto:' + email + "?"+encodeURI("subject=" + subject + "&body=" + message);
+    window.location.href = mailtoUrl;
+}
+
+</script>
   </head>
 
   <body>
@@ -277,29 +302,52 @@
 <section class="row_container">
 <div class="tile_span6">
 <img class="imgstyling" src="../images/brysheadshotfin.jpg" alt="Headshot of Catherine Brys wearing a blue walking jacket with the sea in the background, image credit Catherine Brys" />
+<br />
+<br />
 </div>
+
 <div class="tile_span6">
 <h2>Contact:<br /> Let's explore how I can help you</h2>
-<br />
 <p>
-I am based in Glasgow, Scotland, UK and work remotely across the UK and Europe.</p><br />
-<ul>
-<li><span class="emphasiscolour">catherine [at] strategic-consulting.scot</span> 
-<br />(or resilience email catherinebrys [at] yahoo.co.uk) 
-<br />
-</li>
-
-<li><a href="https://www.linkedin.com/in/catherinebrys/" class="textlink">LinkedIn</a></li>
-</ul>
-
-<p>
-Get in touch for a free exploratory conversation to see how I can help you. 
+I am based in Glasgow, Scotland, UK and work remotely across the UK and Europe. <br />&nbsp;
 </p>
-<p><span class="emphasis">Privacy:</span> Your email address is safe with me &ndash; I  use it only to respond to your query. No sharing with third parties. No mailing lists.
-<br />
-<span class="emphasis">Accessibility:</span> This website has been designed with accessibility in mind. I recognise that accessibility is always a work in progress. Let me know about your experience, and how I can improve.</p>
+
+
+<!--orange box with text -->
+<section class="box_container orangebg">
+<p class="standout bold">Get in touch for a free exploratory conversation to see how I can help you</p>
+<form>
+<p class="standout bold"><a href="#" class="buttonstyleblue buttonlink" onclick="createContactEmail()">Send enquiry email</a></p>
+</form>
+</section>
+
+<p>&nbsp;<br />
+Contact: <span class="emphasiscolour">catherine [at] strategic-consulting.scot</span> <br />
+(resilience email: catherinebrys [at] yahoo.co.uk) <br />
+</p>
+
+<p><span class="emphasis">Privacy:</span> Your email address is safe with me &ndash; I  use it only to respond to your query. I don't share your data with third parties. I will not add you to any mailing lists unless you sign up for my content letter.
+</p>
+<p></p>
+
+<!--orange box with text -->
+<section class="box_container bluebg">
+<p class="standout bold">Content letter: <br />Sign me up for valuable insights straight to my Inbox </p>
+<form>
+  <input type="checkbox" id="choice-third-sector" name="choice-third-sector" value="thirdsector" />
+  <label for="choice-third-sector" class="standout">Insights for the third sector</label><br />
+  <input type="checkbox" id="choice-business" name="choice-business" value="business" />
+  <label for="choice-business" class="standout">Insights for business</label><br />
+ <p class="standout bold"><a href="#" class="buttonstyleorange buttonlink" onclick="createEmail()">Send sign-up email</a></p>
+</form>
+</section>
 
 </div>
+</section>
+
+<!--blue banner with text -->
+<section class="row_container">
+<p><span class="emphasis">Accessibility:</span> This website has been designed with accessibility in mind. I recognise that accessibility is always a work in progress. Let me know about your experience, and how I can improve.</p>
 </section>
 
 <!--spacer -->
@@ -381,8 +429,6 @@ Get in touch for a free exploratory conversation to see how I can help you.
               <li><a href="https://www.strategic-consulting.scot/about/#story">Story</a></li>
         
               <li><a href="https://www.strategic-consulting.scot/about/#values">Values</a></li>
-        
-              <li><a href="https://www.strategic-consulting.scot/about/#associate">Associate</a></li>
         
             </ul>
         

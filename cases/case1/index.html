@@ -65,6 +65,31 @@
     async>
   </script>
   
+  <script type="text/javascript">
+    var a1="con"; var a2="cath";var b2="in";var b1="strat"; var c1="sult"; var d1="scot"
+function createEmail() {
+    
+    var choices = document.getElementById('choice-business').checked ? "business" : "";
+    choices = document.getElementById('choice-third-sector').checked ? choices+(choices!="" ? " and " : "")+"third sector" : choices;
+    if (choices=="") {
+        choices="business and third sector";
+    }
+    var subject = "Subscribe to content letter "+choices;
+    var message = "Hi Catherine,\n\nPlease subscribe me to your content letter with insights for "+choices+".";
+    var email = a1+"tent@"+b1+"egic-"+a1+c1+b2+"g."+d1;
+    var mailtoUrl = 'mailto:' + email + "?"+encodeURI("subject=" + subject + "&body=" + message);
+    window.location.href = mailtoUrl;
+}
+
+function createContactEmail() {
+    var subject = "Enquiry";
+    var message = "";
+    var email = a2+"er"+b2+"e@"+b1+"egic-"+a1+c1+b2+"g."+d1;
+    var mailtoUrl = 'mailto:' + email + "?"+encodeURI("subject=" + subject + "&body=" + message);
+    window.location.href = mailtoUrl;
+}
+
+</script>
   </head>
 
   <body>
@@ -389,8 +414,6 @@ The time we’ve spent with Catherine, her insightful questions, and proactive a
               <li><a href="https://www.strategic-consulting.scot/about/#story">Story</a></li>
         
               <li><a href="https://www.strategic-consulting.scot/about/#values">Values</a></li>
-        
-              <li><a href="https://www.strategic-consulting.scot/about/#associate">Associate</a></li>
         
             </ul>
         

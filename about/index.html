@@ -65,6 +65,31 @@
     async>
   </script>
   
+  <script type="text/javascript">
+    var a1="con"; var a2="cath";var b2="in";var b1="strat"; var c1="sult"; var d1="scot"
+function createEmail() {
+    
+    var choices = document.getElementById('choice-business').checked ? "business" : "";
+    choices = document.getElementById('choice-third-sector').checked ? choices+(choices!="" ? " and " : "")+"third sector" : choices;
+    if (choices=="") {
+        choices="business and third sector";
+    }
+    var subject = "Subscribe to content letter "+choices;
+    var message = "Hi Catherine,\n\nPlease subscribe me to your content letter with insights for "+choices+".";
+    var email = a1+"tent@"+b1+"egic-"+a1+c1+b2+"g."+d1;
+    var mailtoUrl = 'mailto:' + email + "?"+encodeURI("subject=" + subject + "&body=" + message);
+    window.location.href = mailtoUrl;
+}
+
+function createContactEmail() {
+    var subject = "Enquiry";
+    var message = "";
+    var email = a2+"er"+b2+"e@"+b1+"egic-"+a1+c1+b2+"g."+d1;
+    var mailtoUrl = 'mailto:' + email + "?"+encodeURI("subject=" + subject + "&body=" + message);
+    window.location.href = mailtoUrl;
+}
+
+</script>
   </head>
 
   <body>
@@ -373,10 +398,23 @@ I believe in the magic that happens when people and organizations reach their po
 I am selective in the organisations I work with because I care about people and the planet.
 </li>
 </ul>
+
+<p><span class="emphasiscolour">Proudly AI free: </span>Because I care about people and the planet I do not use any (generative) AI tools in my work nor do I participate in projects where these tools are used. <a href="../aistatement">Read my full statement.</a> </p>
+
 </div>
 <div class="tile_span6">
 <h2 id="values">Values</h2>
 <img class="imgstyling" src="../images/aboutvalues.png" alt="Water wave in close-up, photo by Jonas Allert" />
+</div>
+</section>
+
+<!--client quotes -->
+<section class="row_container">
+<div class="tile_span12">
+<p class="quote"><span class="quotesign">“</span>
+Catherine has a collaborative and open-minded approach. She is able to see, consider and include/exclude a wide variety of possibilities. She is able to explore and make sense of complex situations. She is also able to transfer knowledge, skills and experience from other sectors and apply them authentically and helpfully in other contexts.”
+<br /><span class="emphasis">Gordon Hodge, Head of Conferencing and Events, University of Strathclyde</span>
+</p>
 </div>
 </section>
 
@@ -453,8 +491,6 @@ I am selective in the organisations I work with because I care about people and 
               <li><a href="https://www.strategic-consulting.scot/about/#story">Story</a></li>
         
               <li><a href="https://www.strategic-consulting.scot/about/#values">Values</a></li>
-        
-              <li><a href="https://www.strategic-consulting.scot/about/#associate">Associate</a></li>
         
             </ul>
         
